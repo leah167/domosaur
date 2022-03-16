@@ -11,47 +11,47 @@ const biggify = document.querySelector('#biggify');
 
 // ## And Now, Some Warmup Challenges
 
-spanMessWithMe.style.fontSize = '40px';
+spanMessWithMe.style.fontSize = '40px';   //1
     
-newColor.style.backgroundColor = 'green';
+newColor.style.backgroundColor = 'green'; //2
     
-hide.style.display = "none";
+hide.style.display = "none";              //3
     
-triceratops.style.width = '324px';
+triceratops.style.width = '324px';        //4
 
 // ## Event Listener Challenges
 
-spanMessWithMe.addEventListener('click', function() {
+spanMessWithMe.addEventListener('click', function() {    //1
     spanMessWithMe.style.color = 'orange';
     
 })
 
-triceratops.addEventListener('click', function() {
+triceratops.addEventListener('click', function() {       //2
     triceratops.style.border = '1px solid red'
 })
 
-feathers.addEventListener('click', function() {
+feathers.addEventListener('click', function() {          //3
     feathers.style.opacity = '0.5';
     
 })
 
-toggleButton.addEventListener('click', function() {
+toggleButton.addEventListener('click', function() {      //4
     if (toggle === false) {
         dinosRow.style.backgroundColor = 'aquamarine'
         toggle = true
     } else {
-        dinosRow.style.backgroundColor = 'white' //stretch goal
+        dinosRow.style.backgroundColor = 'white'         //stretch goal 1
         toggle = false
     }
     
 })
 
-biggify.addEventListener('mouseover', function() {
+biggify.addEventListener('mouseover', function() {        //5
     biggify.style.width = "200px";
 })
 
 biggify.addEventListener('mouseout', function() {
-    biggify.style.width = "162px" //stretch goal (found original size in elements)
+    biggify.style.width = "162px"                         //stretch goal 2 (found original size in elements and styles)
 })
 
 
